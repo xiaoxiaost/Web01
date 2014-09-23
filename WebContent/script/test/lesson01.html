@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet"  type="text/css" href="../../ExtJs4.2.1/resources/css/ext-all.css">
+<script type="text/javascript" src="../../ExtJs4.2.1/bootstrap.js"></script>
+<script type="text/javascript" src="../../ExtJs4.2.1/ext-lang-zh_CN.js"></script>
+<script type="text/javascript" src="lesson01.js"></script>
+<script type="text/javascript">
+	Ext.onReady(function(){
+		var helloWindow = new HelloWindow({
+			items:{
+				html:"我是一个item"
+			},
+			title:'我的新标题'
+		});
+		helloWindow.show('windows');
+		
+	})
+
+</script>
+</head>
+<body>
+<div id='windows'></div>
+</body>
+</html>
